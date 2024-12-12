@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #A7CF5D;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.section-list{
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw
+}
