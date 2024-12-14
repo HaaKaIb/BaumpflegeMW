@@ -5,43 +5,69 @@
     font-family:"ArialRounded", sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 .navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    z-index: 1;
     top: 0;
-    z-index: 1000;
     background-color: #A7CF5D;
     padding-left: 2rem;
     padding-right: 10vw;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
     box-shadow: 0px 1px 2px 2px rgba(150, 150, 150, 0.8);
 }
 
 .navbar-logo{
-    max-width: 50px;
+   max-width: 3rem;
 }
 
 .section-list{
-    display: flex;
-    justify-content: space-around;
-    gap: 4vw
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+.sections{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 24px;
+    transition: background-color 0.3s;
+    transition: color 0.1s;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.sections:hover{
+    background-color: #8cad4f;
+}
+
+.sections:active{
+    color: rgb(58, 58, 58);
 }
 
 .start{
     position: relative;
-    text-align: center;
-    margin-top: 0.5rem;
 }
 
 .hero-image{
     width: 100vw;
     max-height: 500px;
     filter: brightness(0.7);
-    border-top: 2px solid #483D3C;
     border-bottom: 2px solid #483D3C;
 }
 
@@ -51,13 +77,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .hero-logo{
     padding-right: 0.5rem;
-    max-width: 100px;
-    border-right: 4px solid #483D3C;
+    max-width: 15vw;
+    border-right: 4px solid gray;
 }
 
 .hero-text{
@@ -97,4 +125,37 @@
 .call-to-action{
     margin-top: 0.5rem;
     font-size: 20px;
+}
+
+.pictures{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.pics{
+    max-width: 20vw;
+    object-fit: contain;
+    border: 2px solid #A7CF5D;
+    object-fit: cover;
+}
+
+.werte{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.werte-liste{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.werte-items{
+    margin-top: 0.5rem;
+    font-size: 24px;
+    color: green;
 }
