@@ -159,3 +159,37 @@ li {
     font-size: 24px;
     color: green;
 }
+
+.about-container{
+    display: flex;
+    justify-content: center;
+}
+
+.ueber-mich{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about{
+    max-width: 40vw;
+}
+
+.profession{
+    color: rgb(88, 88, 88);
+    font-weight: 600;
+}
+
+.bio{
+    margin-top: 0.5rem;
+    font-size: 20px;
+}
+
+.addresse{
+    margin-top: 3rem;
+}
+
+.profile-picture{
+    max-width: 20vw;
+}
