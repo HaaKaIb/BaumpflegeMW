@@ -10,9 +10,9 @@
 <body>
     <div class="container">
         <div class="navbar">
-            <img class="navbar-logo" src="images/logo-removebg-preview.png" alt="M W Logo">
+            <a href="#start"><img class="navbar-logo" src="images/logo-removebg-preview.png" alt="M W Logo"></a>
             <ul class="section-list">
-                <li><a class="sections">Kontakt</a></li>
+                <li><a class="sections" href="#kontakt">Kontakt</a></li>
                 <li><a class="sections" href="#ueber-mich">Über Mich</a></li>
                 <li><a class="sections" href="#werte">Werte</a></li>
                 <li><a class="sections" href="#hook">Leistungen</a></li>
@@ -38,7 +38,7 @@
                     <strong>schnelle, transparente und unkomplizierte Lösung</strong> bieten. 
                 </p>
                 <p class="discription">Unsere Dienste beinhalten alles rund um den Baum.
-                    Von sicheren Fällungen über umfassende Kontrolle bis hin zur transparenten Beratung. 
+                    Von sicheren Fällungen über umfassender Kontrolle bis hin zur transparenten Beratung. 
                     Wir freuen uns darauf Ihr Problem zu lösen und gleichzeitig der Natur etwas gutes zu tun.
                 </p>
                 <p class="call-to-action">Jetzt <a href="">Kontaktieren</a>!</p>
@@ -58,29 +58,38 @@
                 <p class="werte-items">dem Wohlergehen der Natur.</p>
             </div>
         </div>
-
-        <div class="about-container" id="ueber-mich">
-            <div class="ueber-mich">
-                <div class="about">
-                    <h1 class="name">Maximiliam Wilhelm</h1>
-                    <p class="profession">Forstwirtschaftsstudent an der HAWK</p>
-                    <p class="bio">Ich bin schon seit der Kindheit sehr naturnah aufgewachsen, da meine Eltern im 
-                        "grünen Bereich" tätig sind. Heute bin ich Baumkletterer und helfe 
-                        bei Baumangelegenheiten in und um Göttingen.
-                    </p>
-                    <div class="addresse">
-                        <p>Baumstraße 12</p>
-                        <p>34567 Göttingen</p>
-                        <p>Tel.: 8910 123456</p>
-                        <p>E-Mail: maximiliam.wilhelm@baumpflege-mw.com</p>
-                    </div>
+        
+        <div id="ueber-mich"></div>
+        <div class="ueber-mich">
+            <img class="profile-picture" src="images/pexels-dogadakisakal-77353893-13725078.jpg">
+            <div class="about">
+                <h1 class="name">Maximilian Wilhelm</h1>
+                <p class="profession">Forstwirtschaftsstudent an der HAWK</p>
+                <p class="bio">Ich bin schon seit der Kindheit sehr naturnah aufgewachsen, da meine Eltern im 
+                    "grünen Bereich" tätig sind. Heute bin ich Baumkletterer und helfe 
+                    bei Baumangelegenheiten in und um Göttingen.
+                </p>
+                <div class="addresse">
+                    <p>Baumstraße 12</p>
+                    <p>34567 Göttingen</p>
+                    <p>Tel.: 8910 123456</p>
+                    <p>E-Mail: maximilian.wilhelm@baumpflege-mw.com</p>
                 </div>
-                <img class="profile-picture" src="images/pexels-dogadakisakal-77353893-13725078.jpg">
             </div>
         </div>
 
-        <div class="kontakt">
-            
+        <div class="kontakt" id="kontakt">
+            <h1 class="angebot">Kostenloses Angebot anfordern!</h1>
+            <form class="form" action="">
+                <h1>Kontakt</h1>
+                <label for="input-name">Name:</label>
+                <input type="text" placeholder="Max" id="input-name">
+                <label for="input-email">E-Mail:</label>
+                <input type="email" placeholder="max@mustermann.de" id="input-email">
+                <label for="input-message">Deine Nachricht:</label>
+                <textarea type="text" placeholder="Hilfe, mein Baum ist zu groß!!!" id="input-message"></textarea>
+                <input type="submit" value="Absenden" id="submit">
+            </form>
         </div>
 
         <footer>
