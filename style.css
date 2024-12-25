@@ -10,6 +10,17 @@ html {
     scroll-behavior: smooth;
 }
 
+.container{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.content-wrap{
+    padding-bottom: 9.5rem;
+}
+
+
 .navbar{
     display: flex;
     flex-direction: row;
@@ -20,7 +31,7 @@ html {
     top: 0;
     background-color: #A7CF5D;
     padding-left: 2rem;
-    padding-right: 10vw;
+    padding-right: 10%;
     box-shadow: 0px 1px 2px 2px rgba(150, 150, 150, 0.8);
 }
 
@@ -35,11 +46,10 @@ html {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
 }
 
-li {
-    float: right;
-}
 
 .sections{
     display: inline-block;
@@ -66,7 +76,7 @@ li {
 }
 
 .hero-image{
-    width: 100vw;
+    width: 100%;
     max-height: 500px;
     filter: brightness(0.7);
     border-bottom: 2px solid #483D3C;
@@ -99,8 +109,6 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 5rem;
-    margin-right: 5rem;
     margin-top: 5rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -129,7 +137,7 @@ li {
 }
 
 .pictures{
-    margin-top: 5rem;
+    margin-top: 7rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -144,7 +152,7 @@ li {
 }
 
 .werte{
-    margin-top: 5rem;
+    margin-top: 7rem;
     text-align: center;
 }
 
@@ -162,7 +170,7 @@ li {
 }
 
 .ueber-mich{
-    margin-top: 8rem;
+    margin-top: 7rem;
     display: flex;
     justify-content: center;
     margin-left: 8%;
@@ -256,4 +264,25 @@ textarea {
 
 #submit:active{
     transform: scale(0.98);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #A7CF5D;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    cursor: pointer;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
 }
