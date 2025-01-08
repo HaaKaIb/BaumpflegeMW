@@ -280,6 +280,10 @@ footer a {
     padding: 5px;
 }
 
+.rights{
+    padding: 5px;
+    opacity: 80%;
+}
 
 @media only screen and (max-width: 650px){
     .navbar{
