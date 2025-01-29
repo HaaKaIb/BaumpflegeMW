@@ -113,36 +113,6 @@ html {
 
 .hook{
     text-align: center;
-}
-
-.leistung-heading{
-   text-align: center;
-   margin-top: 4rem;
-   margin-bottom: 1rem;
-}
-
-.leistungen{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 20px;
-}
-
-.leistung-item{
-    display: flex;
-    flex: 1 1 calc(50%-20px);
-    align-items: center; 
-}
-
-.material-symbols-outlined{
-    color: green;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.hook{
     color: green;
 }
 
@@ -241,6 +211,30 @@ animation-duration: 1.5s;
 from {opacity: 0.8}
 to {opacity: 1}
 }
+
+.leistung-heading{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+ }
+ 
+ .leistungen{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 2px;
+ }
+ 
+ 
+ .leistung-item{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+ }
+ 
+ .material-symbols-outlined{
+     color: green;
+ }
 
 .werte{
     margin-top: 7rem;
