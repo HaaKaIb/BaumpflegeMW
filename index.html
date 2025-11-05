@@ -3,198 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BaumPflegeMW</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check" />
+    <title>Baumpflege MW</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="container" id="top">
-        <div class="content-wrap">
-            <div class="navbar">
-                <a href="#start"><img class="navbar-logo" src="images/logoNoBg.png" alt="M W Logo"></a>
-                <ul class="section-list">
-                    <li><a class="sections" href="index.html#top">Start</a></li>
-                    <li><a class="sections" href="index.html#leistungen">Leistungen</a></li>
-                    <li><a class="sections" href="index.html#werte">Werte</a></li>
-                    <li><a class="sections" href="index.html#ueber-mich">Über Mich</a></li>
-                    <li><a class="sections" href="index.html#kontakt">Kontakt</a></li>   
-                </ul>
+    <div class="container">
+
+        <nav class="navbar">
+            <img src="Images/logoNoBg.png" alt="MW Logo" class="navbar-logo">
+            <ul class="sections">
+                <li class="section-point"><a href="index.html#hero" class="section">Start</a></li>
+                <li class="section-point"><a href="index.html#leistungen" class="section">Leistungen</a></li>
+                <li class="section-point"><a href="index.html#ueber-uns" class="section">Über Uns</a></li>
+                <li class="section-point"><a href="index.html#im-detail" class="section">Im Detail</a></li>
+                <li class="section-point"><a href="index.html#kontakt" class="section">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero" id="hero">
+            <div class="title-container">
+                <img src="Images/logoNoBg.png" alt="MW Logo" class="hero-logo">
+                <h1 class="title">Für alle Baum & Waldangelegenheiten im Ruhrgebiet</h1>
+            </div>
+        </div>
+
+        <div class="hook"  id="leistungen">
+            <h2 class="hook-text">Wir sind ein Fachbetrieb für Baumdiesntleistungen und forstliche
+                Ingenierarbeiten. Mit Erfahrung, modernen Techniken und fundiertem Wissen sorgen wir
+                für gesunde Bäume, sichere Wälder und nachhaltiger Lösungen.
+            </h2>
+        </div>
+
+        <div class="leistungen">
+            <p class="leistungen-title">Leistungen</p>
+            <div class="leistungen-cards">
+                <div class="leistung-card">
+                    <p class="leistung-card-title">Beratung Baum & Wald</p>
+                    <a href="index.html#im-detail"><img src="/Images/jimmy-nilsson-masth-9qKg_avlcY0-unsplash.jpg" alt="" class="leistung-image"></a>
+                </div>
+
+                <div class="leistung-card">
+                    <p class="leistung-card-title">Rodung</p>
+                    <a href="index.html#im-detail"><img src="/Images/jimmy-nilsson-masth-9qKg_avlcY0-unsplash.jpg" alt="" class="leistung-image"></a>
+                </div>
+
+                <div class="leistung-card">
+                    <p class="leistung-card-title">Baumpflege & Fällung</p>
+                    <a href="index.html#im-detail"><img src="/Images/jimmy-nilsson-masth-9qKg_avlcY0-unsplash.jpg" alt="" class="leistung-image"></a>
+                </div>
+            </div>
+            <p class="leistungen-text" id="ueber-uns">Bei unseren Dienstleistungen greifen wir zurück auf bis zu
+                10 Jahre Erfahrung aus der Praxis, die stetig durch Fort- und Weiterbildung mit
+                neuen Erkenntnissen der Arbeitstechnik und Wissenschaft unsere Kompetenzen erweitern.
+            </p>
+        </div>
+
+        <div class="ueber-uns">
+            <p class="ueber-uns-title">Über Uns</p>
+
+            <p class="subtitle">Wer hinter dem Unternehmen steht</p>
+            <div class="subcontainer">   
+                <img src="Images/baumKroneHintergrund.jpg" alt="Unser Team" class="subimage">
+                <p class="subtext">Hinter dem Unternehmen steht ein starkes Netzwerk aus erfahrenen
+                    <strong>Ingenieuren, Forstwirten, Baumkletterern und Nachwuchskräften.</strong> 
+                    Gemeinsam vereinen wir Fachwissen, Erfahrung und Leidenschaft für Bäume und Wälder. 
+                    So können Projekte jeder Größenordnung zuverlässig, effizient und in höchster Qualität
+                    umgesetzt werden. Von der Pflege einzelner Bäume bis hin zu komplexen forstlichen Maßnahmen.
+                </p>
             </div>
 
-            <div class="start" id="start">
-                <img class="hero-image" src="images/baumKroneHintergrund.jpg">
-                <div class="hero">
-                    <img class="hero-logo" src="images/logoNoBg.png" alt="M W Logo">
-                    <h1 class="hero-text">Baumpflege -und fällung</h1>
+            <p class="subtitle">Unser Weg & Qualifikationen</p>
+            <div class="subcontainer">   
+                <img src="Images/baumKroneHintergrund.jpg" alt="Unser Team" class="subimage">
+                <div class="subsubcontainer">
+                    <p class="qualifikationen-text">Seit 2014 arbeiten wir professionell im Bereich Forst- und
+                        Baumdiesntleistungen. Durch Ausbildung, zahlreiche Weiterbildungen und den Einsatz 
+                        modernen Technik haben wir unser Leistungsspektrum kontinuierlich erweitert. Dazu zählen
+                        unter anderem:
+                    </p>
+                    <ul class="qualifikationen-list">
+                        <li class="qualifikationen-point">Baumkontrollen nach FLL - mit tausenden kontrollierten Bäumen</li>
+                        <li class="qualifikationen-point">Seilkletter- und Hubsteigertechnik - sichere Arbeit bis in die Baumkrone</li>
+                        <li class="qualifikationen-point">Planung & Durchführung von Maßnahmen - von der Pflege über Sicherung bis zur Fällung</li>
+                    </ul>
+                    <p class="qualifikationen-text">So konnten wir über die Jahre unzählige Projekte fachgerecht planen,
+                        durchführen und erfolgreich abschließen.
+                    </p>
                 </div>
             </div>
 
-                      
-                <div class="intro-text">
-                    <h1 class="hook">Ihr zuverlässiger Partner für alle Baumangelegenheiten
-                        in Göttingen und Umgebung!
-                    </h1>
-                    <p class="intro">Professionelle <strong>Baumpflege in und um Göttingen</strong>.
-                        Durch Studium, Praktika und Erfahrung können wir Ihnen eine
-                        <strong>schnelle, transparente und unkomplizierte Lösung</strong> bieten. 
+            <p class="subtitle">Der Inhaber & Geschäftsführer</p>
+            <div class="subcontainer">   
+                <img src="Images/baumKroneHintergrund.jpg" alt="Unser Team" class="subimage">
+                <div class="subsubcontainer">
+                    <p class="inhaber-text">Geführt wird das Unternehmen von <strong>Maximilian Wilhelm,</strong> Forstwirt und
+                        angehender Forstingenieur. Die berufliche Laufbahn begann 2014 mit der Ausbildung zum Forstwirt, die 2017
+                        erfolgreich abgeschlossen wurde. Seither folgten zahlreiche Lehrgänge und Fortbildungen, von der Baumkontrolle
+                        nach FLL über Seilkletter- und Hubsteigertechnik bis hin zu umfangreicher Praxiserfahrung in Planung
+                        und Umsetzung unterschiedlicher Maßnahmen.
                     </p>
-                    <p class="discription">Unsere Dienste beinhalten alles rund um den Baum.
-                        Von sicheren Fällungen über umfassender Kontrolle bis hin zur transparenten Beratung. 
-                        Wir freuen uns darauf Ihr Problem zu lösen und gleichzeitig der Natur etwas gutes zu tun.
+                    <p class="inhaber-text">Der wichtigster Schritt ist aktuell das Studium der <strong>Forstwirtschaft,</strong> das 
+                        kurz vor dem Abschluss steht. Daran schließt sich das Studium der Arboristik an. Die Kombination aus über 
+                        <strong>10 Jahren Praxiserfahrung</strong> und fundiertem <strong>wissenschaftlichem Know-How</strong> ermöglicht 
+                        es mir, das gesamte Spektrum vom städtischen Einzelbaum bis zur nachhaltigen Waldbewirschaftung abzudecken.
                     </p>
-                    <p class="call-to-action">Jetzt kostenfrei ein Angebot <a href="#kontakt">anfragen</a>!</p>
                 </div>
-            
-                <div class="pictures" id="werte">
-                    <!-- Slideshow container -->
-                    <div class="slideshow-container">
+            </div>          
 
-                        <!-- Full-width images with number and caption text -->
-                        <div class="mySlides fade">
-                        <div class="numbertext">1 / 3</div>
-                        <img src="images/jimmy-nilsson-masth-9qKg_avlcY0-unsplash.jpg" style="width:100%">
-                        <div class="text">Caption Text</div>
-                        </div>
-                    
-                        <div class="mySlides fade">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="images/jimmy-nilsson-masth-9qKg_avlcY0-unsplash.jpg" style="width:100%">
-                        <div class="text">Caption Two</div>
-                        </div>
-                    
-                        <div class="mySlides fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="images/jimmy-nilsson-masth-9qKg_avlcY0-unsplash.jpg" style="width:100%">
-                        <div class="text">Caption Three</div>
-                        </div>
-                    
-                        <!-- Next and previous buttons -->
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
-                    <br>
-                    
-                </div>
+            <p class="subtitle">Mein Anspruch</p>
+            <div class="subcontainer-end">   
+                <img src="Images/jimmy-nilsson-masth-9qKg_avlcY0-unsplash.jpg" alt="Unser Team" class="subimage-end">
+                <p class="subtext-end">"Für jedes Problem rund um Bäume und Wälder habe ich bisher eine passende Lösung gefunden. 
+                Mein Ziel ist es, mit Erfahrung, Präzision und Leidenschaft Projekte nicht nur erfolgreich, sondern nachhaltig umzusetzen." 
+                <p class="subtext-end" id="im-detail">-Maximilian Wilhelm</p>
+                </p>
+            </div>
+        </div>
 
-                <h1 class="leistung-heading" id="leistungen">Unsere Leistungen</h1>
-                    <div class="leistungen">
-                        <div class="leistung-item">
-                            <span class="material-symbols-outlined">check</span>
-                            <p class="leistung-text">Beratung</p>
-                        </div>
-                        <div class="leistung-item">
-                            <span class="material-symbols-outlined">check</span>
-                            <p class="leistung-text">Kartenerstellung</p>
-                        </div>
-                        <div class="leistung-item">
-                            <span class="material-symbols-outlined">check</span>
-                            <p class="leistung-text">Baumkontrolle</p>
-                        </div>
-                        <div class="leistung-item">
-                            <span class="material-symbols-outlined">check</span>
-                            <p class="leistung-text">Baumkataster</p>
-                        </div>
-                        <div class="leistung-item">
-                            <span class="material-symbols-outlined">check</span>
-                            <p class="leistung-text">Baumpflege</p>
-                        </div>
-                        <div class="leistung-item">
-                            <span class="material-symbols-outlined">check</span>
-                            <p class="leistung-text">Baumpflanzung</p>
-                        </div>
-                        <div class="leistung-item">
-                            <span class="material-symbols-outlined">check</span>
-                            <p class="leistung-text">Baumfällung</p>
-                        </div>
-                        <div class="leistung-item">
-                            <span class="material-symbols-outlined">check</span>
-                            <p class="leistung-text">Sturmschäden Beseitigung</p>
-                        </div>
-                        <div class="leistung-item">
-                            <span class="material-symbols-outlined">check</span>
-                            <p class="leistung-text">Baumfeldräumung</p>
-                        </div>
-                        <div class="leistung-item">
-                            <span class="material-symbols-outlined">check</span>
-                            <p class="leistung-text">Habitatbaum Herstellung</p>
-                        </div>
-                        <div class="leistung-item">
-                            <span class="material-symbols-outlined">check</span>
-                            <p class="leistung-text">Drohnen Rettung</p>
-                        </div>
-                        <div class="leistung-item">
-                            <span class="material-symbols-outlined">check</span>
-                            <p class="leistung-text">Seilklettertechnik</p>
-                        </div>
-                        <div class="leistung-item">
-                            <span class="material-symbols-outlined">check</span>
-                            <p class="leistung-text">Hubsteigerarbeiten</p>
-                        </div>
-                        <div class="leistung-item">
-                            <span class="material-symbols-outlined">check</span>
-                            <p class="leistung-text">Häckselarbeiten</p>
-                        </div>
-                        <div class="leistung-item">
-                            <span class="material-symbols-outlined">check</span>
-                            <p class="leistung-text">Wurzelfräsen</p>
-                        </div>
-                        <div class="leistung-item">
-                            <span class="material-symbols-outlined">check</span>
-                            <p class="leistung-text">Landschaftspflege/Heckenpflege</p>
-                        </div>
-                        <div class="leistung-item">
-                            <span class="material-symbols-outlined">check</span>
-                            <p class="leistung-text">Kronensicherung</p>
-                        </div>
-                        <div class="leistung-item">
-                            <span class="material-symbols-outlined">check</span>
-                            <p class="leistung-text">Kranfällung</p>
-                        </div>
-                    </div>
+        <div class="im-detail">
+            <p class="im-detail-title">Im Detail</p>
 
-                <div class="werte">
-                    <h1 class="werte-title">Wir legen Wert auf...</h1>
-                    <div class="werte-liste">
-                        <p class="werte-items">Kommunikation.</p>
-                        <p class="werte-items">Erreichbarkeit.</p>
-                        <p class="werte-items">dem Wohlergehen der Natur.</p>
-                    </div>
-                </div>
-                
-                <div id="ueber-mich"></div>
-                <div class="ueber-mich">
-                    <img class="profile-picture" src="images/pexels-dogadakisakal-77353893-13725078.jpg">
-                    <div class="about">
-                        <div>
-                            <h1 class="name">Maximilian Wilhelm</h1>
-                            <p class="profession">Forstwirtschaftsstudent an der HAWK</p>
-                            <p class="bio">Ich bin schon seit der Kindheit sehr naturnah aufgewachsen. Heute bin ich Baumkletterer und helfe 
-                                bei Baumangelegenheiten in und um Göttingen.
-                            </p>
+            <div class="detail-card-container">
+
+                <div class="detail-card">
+                    <p class="detail-card-title">Beratung Baum & Wald</p>
+                    <div class="detail-sub-card">
+                        <div class="detail-card-left">
+                            <ul class="detail-card-list">
+                                <li class="detail-card-points">Baumkontrolle nach FLL</li>
+                                <li class="detail-card-points">Baumkataster</li>
+                                <li class="detail-card-points">Gutachten</li>
+                                <li class="detail-card-points">Artenschutz</li>
+                                <li class="detail-card-points">Baumschutz auf Baskeln</li>
+                                <li class="detail-card-points">Umweltbau</li>
+                                <li class="detail-card-points">Jagdmanagement</li>
+                                <li class="detail-card-points">Holz Ernte & Logistik</li>
+                                <li class="detail-card-points">Wald Pflege-Konzepte</li>
+                                <li class="detail-card-points">Forstplanung & Waldingenieur</li>
+                            </ul>
                         </div>
-                        <div class="addresse">
-                            <p>Baumstraße 12</p>
-                            <p>34567 Göttingen</p>
-                            <p>Tel.: 8910 123456</p>
-                            <p>E-Mail: maximilian.wilhelm@baumpflege-mw.com</p>
+
+                        <div class="detail-card-right">
+                            <p class="detail-card-text">Kurzer Text dazu</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="kontakt" id="kontakt">
-                    <h1 class="angebot">Jetzt Angebot anfragen</h1>
-                    <form class="form" action="">
-                        <label for="input-name">Name:</label>
-                        <input type="text" placeholder="Max" id="input-name">
-                        <label for="input-email">E-Mail:</label>
-                        <input type="email" placeholder="max@mustermann.de" id="input-email">
-                        <label for="input-message">Deine Nachricht:</label>
-                        <textarea type="text" placeholder="Hilfe, mein Baum ist zu groß!!!" id="input-message"></textarea>
-                        <input type="submit" value="Absenden" id="submit">
-                    </form>
+                <div class="detail-card">
+                    <p class="detail-card-title">Rodung</p>
+                    <div class="detail-sub-card">
+                        <div class="detail-card-left">
+                            <ul class="detail-card-list">
+                                <li class="detail-card-points">Baufeldräumung</li>
+                                <li class="detail-card-points">Freischneiden</li>
+                                <li class="detail-card-points">Mulchen</li>
+                                <li class="detail-card-points">Wurzelfräsen</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-card-right">
+                            <p class="detail-card-text">Kurzer Text dazu</p>
+                        </div>
+                    </div>
                 </div>
-            
+
+                <div class="detail-card">
+                    <p class="detail-card-title">Baumpflege & Fällung</p>
+                    <div class="detail-sub-card">
+                        <div class="detail-card-left">
+                            <ul class="detail-card-list">
+                                <li class="detail-card-points">SKT-Arbeiten</li>
+                                <li class="detail-card-points">Hubsteigerarbeiten</li>
+                                <li class="detail-card-points">Baumpflege nach STV</li>
+                                <li class="detail-card-points">Kronensicherung</li>
+                                <li class="detail-card-points">Licht & Dekorbefestigung</li>
+                                <li class="detail-card-points">Gefahrbaumfällung</li>
+                                <li class="detail-card-points">Sturmschäden</li>
+                                <li class="detail-card-points">Notdienst</li>
+                                <li class="detail-card-points">Hedenschnitt</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-card-right">
+                            <p class="detail-card-text">Kurzer Text dazu</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="kontakt" id="kontakt">
+            <p class="angebot">Jetzt Angebot anfragen</p>
+            <form class="form" action="">
+                <label for="input-name">Name:</label>
+                <input type="text" placeholder="Max" id="input-name">
+                <label for="input-email">E-Mail:</label>
+                <input type="email" placeholder="max@mustermann.de" id="input-email">
+                <label for="input-message">Deine Nachricht:</label>
+                <textarea type="text" placeholder="Hilfe, mein Baum ist zu groß!!!" id="input-message"></textarea>
+                <input type="submit" value="Absenden" id="submit">
+            </form>
         </div>
 
         <footer>
@@ -203,6 +213,6 @@
             <p class="rights">&#169 2025 Maximilian Wilhelm. Alle Rechte vorbehalten.</p>
         </footer>
     </div>
-    <script src="script.js"></script>
+
 </body>
 </html>
