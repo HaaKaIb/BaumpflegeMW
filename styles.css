@@ -13,7 +13,9 @@
     background-color: #A7CF5D;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: fixed;
-    z-index: 2;
+    top: 0;
+    left: 0;
+    z-index: 1;
     width: 100%;
 }
 
@@ -250,6 +252,11 @@
     gap: 30px;
 }
 
+.detail-card-container a{
+    text-decoration: none;
+    color: black;
+}
+
 .detail-card{
     margin-top: 50px;
     display: flex;
@@ -261,11 +268,16 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     padding: 20px;
     transition: 0.3s ease;
+    height: 100%;
 }
 
 .detail-card:hover{
     cursor: pointer;
     box-shadow: 0 0 20px #A7CF5D, 0 0 40px #A7CF5D, 0 0 60px #A7CF5D;
+}
+
+.detail-card:active{
+    transform: scale(0.98);
 }
 
 .detail-card-title{
@@ -497,4 +509,70 @@ footer a {
     form {
         max-width: 300px;
     }
+}
+
+.datenschutz-container {
+    max-width: 800px;
+    margin: 100px auto; 
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.datenschutz-container h1 {
+    font-size: 2em;
+    color: #222;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.datenschutz-container h2 {
+    font-size: 1.6em;
+    color: #333;
+    margin-top: 30px;
+}
+
+.datenschutz-container h3 {
+    font-size: 1.3em;
+    color: #444;
+    margin-top: 25px;
+}
+
+.datenschutz-container h4 {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.datenschutz-container p {
+    margin-bottom: 15px;
+}
+
+.datenschutz-container ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.datenschutz-container li {
+    margin-bottom: 8px;
+}
+
+
+.datenschutz-container a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.datenschutz-container a:hover {
+    text-decoration: underline;
+}
+
+.impressum-container{
+    margin-top: 100px;
+    margin-bottom: 100vh;
 }
