@@ -28,8 +28,8 @@
         </div>
 
         <div class="hook"  id="leistungen">
-            <h2 class="hook-text">Wir sind ein Fachbetrieb für Baumdiesntleistungen und forstliche
-                Ingenierarbeiten. Mit Erfahrung, modernen Techniken und fundiertem Wissen sorgen wir
+            <h2 class="hook-text">Wir sind ein Fachbetrieb für Baumdienstleistungen und forstliche
+                Ingenieursarbeiten. Mit Erfahrung, modernen Techniken und fundiertem Wissen sorgen wir
                 für gesunde Bäume, sichere Wälder und nachhaltiger Lösungen.
             </h2>
         </div>
@@ -77,7 +77,7 @@
                 <img src="images/baumKroneHintergrund.jpg" alt="Unser Team" class="subimage">
                 <div class="subsubcontainer">
                     <p class="qualifikationen-text">Seit 2014 arbeiten wir professionell im Bereich Forst- und
-                        Baumdiesntleistungen. Durch Ausbildung, zahlreiche Weiterbildungen und den Einsatz 
+                        Baumdienstleistungen. Durch Ausbildung, zahlreiche Weiterbildungen und den Einsatz 
                         modernen Technik haben wir unser Leistungsspektrum kontinuierlich erweitert. Dazu zählen
                         unter anderem:
                     </p>
@@ -102,10 +102,10 @@
                         nach FLL über Seilkletter- und Hubsteigertechnik bis hin zu umfangreicher Praxiserfahrung in Planung
                         und Umsetzung unterschiedlicher Maßnahmen.
                     </p>
-                    <p class="inhaber-text">Der wichtigster Schritt ist aktuell das Studium der <strong>Forstwirtschaft,</strong> das 
+                    <p class="inhaber-text">Der wichtigste Schritt ist aktuell das Studium der <strong>Forstwirtschaft,</strong> das 
                         kurz vor dem Abschluss steht. Daran schließt sich das Studium der Arboristik an. Die Kombination aus über 
-                        <strong>10 Jahren Praxiserfahrung</strong> und fundiertem <strong>wissenschaftlichem Know-How</strong> ermöglicht 
-                        es mir, das gesamte Spektrum vom städtischen Einzelbaum bis zur nachhaltigen Waldbewirschaftung abzudecken.
+                        <strong>10 Jahren Praxiserfahrung</strong> und fundiertem <strong>wissenschaftlichem Know-how</strong> ermöglicht 
+                        es mir, das gesamte Spektrum vom städtischen Einzelbaum bis zur nachhaltigen Waldbewirtschaftung abzudecken.
                     </p>
                 </div>
             </div>          
@@ -201,15 +201,21 @@
         </div>
 
         <div class="kontakt" id="kontakt">
-            <p class="angebot">Jetzt Angebot anfragen</p>
-            <form class="form" action="">
+            <p class="angebot">Jetzt kostenfreies Angebot anfragen.</p>
+            <form method="POST" id="form" class="form">
+
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
                 <label for="input-name">Name:</label>
-                <input type="text" placeholder="Max" id="input-name">
+                <input type="text" name="name" required>
                 <label for="input-email">E-Mail:</label>
-                <input type="email" placeholder="max@mustermann.de" id="input-email">
+                <input type="email" name="email" required>
                 <label for="input-message">Deine Nachricht:</label>
-                <textarea type="text" placeholder="Hilfe, mein Baum ist zu groß!!!" id="input-message"></textarea>
-                <input type="submit" value="Absenden" id="submit">
+                <textarea name="message" required></textarea>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <button type="submit" id="submit">Absenden</button>
+
+                <div id="result"></div>
             </form>
         </div>
     </main>

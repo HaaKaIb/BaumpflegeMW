@@ -312,6 +312,8 @@
 .angebot{
     color: #483D3C;
     margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
 }
 
 .form{
@@ -329,7 +331,7 @@ label {
     margin-bottom: 5px;
 }
 
-input {
+button, input {
     padding: 12px;
     border: 1px solid #ccc;
     font-size: 18px;
@@ -381,22 +383,26 @@ footer a {
 
 @media (max-width: 1200px) {
     .navbar{
-        padding: 0px 10px 0px 10px;
+        padding: 25px 5px 15px 5px;
     }
 
     .navbar-logo{
-        max-width: 50px;
+        max-width: 60px;
         margin-left: 0px;
     }
 
     .sections{
-        gap: 5px;
+        gap: 10px;
         font-size: 16px;
-        margin-left: 20px;
+        margin-left: 25px;
     }
 
     .section{
         padding: 10px;
+    }
+
+    .section-point{
+        margin-bottom: 10px;
     }
 
     .hero-logo{
